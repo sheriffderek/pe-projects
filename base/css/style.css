@@ -1,6 +1,65 @@
-@import "meyer=reset.css";
+@import "meyer-reset.css";
 @import "setup.css";
 
-body {
-	background-color: #FFA476;
+body * {
+	border: 1px solid red;
 }
+main {
+	background-image: url("https://images.unsplash.com/photo-1475565924564-a53d58a1b922?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80");
+	background-size: cover;
+	background-position: center center;
+	min-height: 400vh;
+}
+.inner-column {
+	max-width: 700px;
+}
+
+.site-header {
+	background-color: rgba(14,75,239,0.2);
+	color: black;
+}
+
+.about {
+	background-color: lightgreen;
+}
+
+.contact {
+	background-color: rgba(230,13,13,0.5);
+	color: white;
+
+}
+.site-nav {
+	background-color: red;
+	position: sticky;
+	top: 0;
+}
+
+
+h1 {
+	font-size: 40px;
+	font-family: sans-serif;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h1 + p {
+	margin-top: 14px;
+}
+
+@media (min-width: 700px) {
+	.site-header,.contact {
+		background-color: transparent;
+	}
+	.site-header p {
+		color: green;
+		text-shadow: 1px -1px 0 black;
+	}
+}
+
+
+
+
+
